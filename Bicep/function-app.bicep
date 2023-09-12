@@ -38,7 +38,7 @@ var sku = {
   tier: 'Dynamic'
 }
 
-var storageName = storageAccountName == '' ? '${substring('${toLower(replace(functionName,'-',''))}${toLower(replace(guid(resourceGroup().name,subscription().subscriptionId,functionName),'-',''))}',0,15)}' : storageAccountName
+var storageName = storageAccountName == '' ? '${substring('${toLower(replace(functionName,'-',''))}${toLower(replace(guid(resourceGroup().name,subscription().subscriptionId,functionName),'-',''))}',0,23)}' : storageAccountName
 
 resource appPlan 'Microsoft.Web/serverfarms@2022-09-01' = {
   location: location

@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.20.4.51522",
-      "templateHash": "10448482560099910423"
+      "templateHash": "16960175331674257424"
     }
   },
   "parameters": {
@@ -67,7 +67,7 @@
       "name": "Y1",
       "tier": "Dynamic"
     },
-    "storageName": "[if(equals(parameters('storageAccountName'), ''), format('{0}', substring(format('{0}{1}', toLower(replace(parameters('functionName'), '-', '')), toLower(replace(guid(resourceGroup().name, subscription().subscriptionId, parameters('functionName')), '-', ''))), 0, 15)), parameters('storageAccountName'))]"
+    "storageName": "[if(equals(parameters('storageAccountName'), ''), format('{0}', substring(format('{0}{1}', toLower(replace(parameters('functionName'), '-', '')), toLower(replace(guid(resourceGroup().name, subscription().subscriptionId, parameters('functionName')), '-', ''))), 0, 23)), parameters('storageAccountName'))]"
   },
   "resources": [
     {
