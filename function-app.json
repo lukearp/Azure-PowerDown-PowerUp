@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.20.4.51522",
-      "templateHash": "16960175331674257424"
+      "templateHash": "8110460359939194465"
     }
   },
   "parameters": {
@@ -62,7 +62,7 @@
     }
   },
   "variables": {
-    "suffix": "[if(equals(parameters('azureEnvironment'), 'AzureCloud'), 'core.windows.net', 'core.usgovcloudapi.net')]",
+    "suffix": "[if(equals(parameters('azureEnvironment'), 'AzureCloud'), 'blob.core.windows.net', 'blob.core.usgovcloudapi.net')]",
     "sku": {
       "name": "Y1",
       "tier": "Dynamic"

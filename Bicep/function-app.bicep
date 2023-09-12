@@ -31,7 +31,7 @@ var appSettings = [
     value: 'DefaultEndpointsProtocol=https;AccountName=${storageAccount.name};AccountKey=${storageAccount.listKeys().keys[0].value};EndpointSuffix=${suffix}'
   }
 ]
-var suffix = azureEnvironment == 'AzureCloud' ? 'core.windows.net' : 'core.usgovcloudapi.net'
+var suffix = azureEnvironment == 'AzureCloud' ? 'blob.core.windows.net' : 'blob.core.usgovcloudapi.net'
 
 var sku = {
   name: 'Y1'
