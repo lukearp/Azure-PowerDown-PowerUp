@@ -15,3 +15,7 @@ Azure Firewall (PowerDown only)
 
 # What does the function require?
 System Managed Idenitity enabled and scoped to an Azure Subscription.  Function currently only supports managing power state of resources in a single Azure Subscription.  
+
+# Deployment
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flukearp%2FAzure-PowerDown-PowerUp%2Fmaster%2Ffunction-app.json)
